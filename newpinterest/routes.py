@@ -4,9 +4,8 @@ from newpinterest import app, database, bcrypt
 from newpinterest.models import Usuario, Foto
 from flask_login import login_required, login_user, logout_user, current_user
 from newpinterest.forms import FormLogin, FormCriarConta, FormFoto
-import os
 from werkzeug.utils import secure_filename
-
+import os
 
 @app.route("/", methods=["GET", "POST"])
 def homepage():
